@@ -2,199 +2,426 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>Swiss-Belexpress Jayapura | Experience Jayapura's Best</title>
-  <meta name="description" content="Experience Jayapura's Best – Swiss-Belexpress Jayapura official links." />
-  <meta property="og:title" content="Swiss-Belexpress Jayapura" />
-  <meta property="og:description" content="Experience Jayapura's Best" />
-  <meta property="og:image" content="https://linktr.ee/og/image/swissbelexpressjayapura.jpg" />
-  <meta property="og:url" content="https://promo.lelemuku.com/swissbelexpressjayapura" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Promo.lelemuku.com — Link in Bio untuk Bisnis Papua & Maluku</title>
+  <meta name="description" content="Linktree untuk hotel, restoran, mall, toko, dan bisnis di Papua & Maluku." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <style>
+    :root {
+      --brand-color: #c9a84c;
+      --brand-color-light: #e8c97a;
+      --brand-color-dim: #a07c30;
+    }
+
+    .landing-header {
+      text-align: center;
+      padding: 60px 20px 40px;
+      animation: fadeDown 0.7s ease both;
+    }
+
+    .landing-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--brand);
+      letter-spacing: 0.05em;
+      margin-bottom: 8px;
+    }
+
+    .landing-subtitle {
+      font-size: 0.9rem;
+      font-weight: 300;
+      color: var(--cream-dim);
+      letter-spacing: 0.1em;
+      margin-bottom: 8px;
+    }
+
+    .landing-desc {
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.4);
+      max-width: 400px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    .search-box {
+      max-width: 420px;
+      margin: 30px auto 10px;
+      position: relative;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 14px 20px 14px 48px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: var(--radius);
+      color: var(--cream);
+      font-family: 'Jost', sans-serif;
+      font-size: 0.9rem;
+      outline: none;
+      transition: all var(--transition);
+    }
+
+    .search-box input:focus {
+      border-color: var(--brand);
+      background: rgba(255,255,255,0.08);
+      box-shadow: 0 0 20px color-mix(in srgb, var(--brand) 15%, transparent);
+    }
+
+    .search-box input::placeholder { color: rgba(255,255,255,0.3); }
+
+    .search-box svg {
+      position: absolute;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 18px;
+      height: 18px;
+      color: rgba(255,255,255,0.3);
+      pointer-events: none;
+    }
+
+    .category-section {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .category-title {
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--brand-dim);
+      margin: 32px 0 14px 4px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .category-title::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: rgba(255,255,255,0.06);
+    }
+
+    .business-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 12px;
+    }
+
+    .business-card {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 14px 16px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: var(--radius);
+      text-decoration: none;
+      color: var(--cream);
+      transition: all var(--transition);
+      animation: fadeUp 0.5s ease both;
+    }
+
+    .business-card:hover {
+      border-color: color-mix(in srgb, var(--brand) 35%, transparent);
+      background: rgba(255,255,255,0.07);
+      transform: translateX(4px);
+      box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+    }
+
+    .business-card.hidden { display: none; }
+
+    .business-avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--dark-2);
+      flex-shrink: 0;
+    }
+
+    .business-info {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .business-name {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--cream);
+      margin-bottom: 2px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .business-tagline {
+      font-size: 0.72rem;
+      font-weight: 300;
+      color: var(--cream-dim);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .business-arrow {
+      font-size: 1.1rem;
+      color: color-mix(in srgb, var(--brand) 40%, transparent);
+      flex-shrink: 0;
+      transition: all var(--transition);
+    }
+
+    .business-card:hover .business-arrow {
+      color: var(--brand);
+      transform: translateX(3px);
+    }
+
+    .business-category-tag {
+      font-size: 0.6rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 2px 8px;
+      border-radius: 10px;
+      background: rgba(255,255,255,0.06);
+      color: rgba(255,255,255,0.4);
+      margin-left: 8px;
+    }
+
+    .landing-footer {
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 40px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .landing-footer p {
+      font-size: 0.72rem;
+      color: rgba(255,255,255,0.25);
+    }
+
+    .landing-footer a {
+      color: var(--brand);
+      text-decoration: none;
+    }
+
+    .landing-footer a:hover { text-decoration: underline; }
+
+    .no-results {
+      text-align: center;
+      padding: 40px 20px;
+      color: rgba(255,255,255,0.3);
+      font-size: 0.85rem;
+      display: none;
+    }
+
+    .no-results.show { display: block; }
+
+    @media (max-width: 600px) {
+      .business-grid { grid-template-columns: 1fr; }
+      .landing-logo { font-size: 1.8rem; }
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Background decorative layers -->
   <div class="bg-layer bg-gold"></div>
   <div class="bg-layer bg-noise"></div>
 
-  <main class="container">
+  <div class="landing-header">
+    <h1 class="landing-logo">promo.lelemuku.com</h1>
+    <p class="landing-subtitle">Link in Bio untuk Bisnis Papua & Maluku</p>
+    <p class="landing-desc">Temukan promo, kontak, dan informasi terbaru dari hotel, restoran, mall, toko, dan bisnis favorit Anda.</p>
 
-    <!-- Profile -->
-    <section class="profile">
-      <div class="avatar-wrap">
-        <img
-          src="https://ugc.production.linktr.ee/7d4b9f42-979d-4c2a-96c3-94871f3569d6_WhatsApp-Image-2025-05-22-at-17.11.01.jpeg"
-          alt="Swiss-Belexpress Jayapura"
-          class="avatar"
-          onerror="this.src='https://placehold.co/120x120/c9a84c/fff?text=SBE'"
-        />
-      </div>
-      <h1 class="hotel-name">Swiss-Belexpress Jayapura</h1>
-      <p class="tagline">Experience Jayapura's Best</p>
+    <div class="search-box">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+      <input type="text" id="searchInput" placeholder="Cari hotel, restoran, mall..." />
+    </div>
+  </div>
 
-      <!-- Social icons -->
-      <div class="socials">
-        <a href="https://www.instagram.com/swissbelexpressjayapura" target="_blank" rel="noopener" aria-label="Instagram" class="social-btn">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
-        </a>
-        <a href="https://www.facebook.com/swissbelexpressjayapura" target="_blank" rel="noopener" aria-label="Facebook" class="social-btn">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-        </a>
-        <a href="mailto:info.jayapura@swiss-belexpress.com" aria-label="Email" class="social-btn">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
-        </a>
-      </div>
-    </section>
+  <div class="category-section">
 
-    <!-- Links -->
-    <section class="links">
+    <!-- Hotels -->
+    <div class="category-title">Hotel <span class="business-category-tag">8 bisnis</span></div>
+    <div class="business-grid" data-category="hotel">
 
-      <!-- MEMBER & BOOKING -->
-      <div class="link-group">
-        <a href="https://sbec.swiss-belhotel.com/register" target="_blank" rel="noopener" class="link-card link-primary">
-          <span class="link-icon">🏅</span>
-          <span class="link-text">
-            <span class="link-title">SBEC Member Zone</span>
-            <span class="link-sub">CRM of Hospitality Solution</span>
-          </span>
-          <span class="link-arrow">›</span>
-        </a>
+      <a href="swissbelexpress-jayapura/" class="business-card" data-name="swiss belexpress jayapura">
+        <img src="https://ugc.production.linktr.ee/7d4b9f42-979d-4c2a-96c3-94871f3569d6_WhatsApp-Image-2025-05-22-at-17.11.01.jpeg" class="business-avatar" alt="Swiss-Belexpress Jayapura" onerror="this.src='https://placehold.co/48x48/c9a84c/fff?text=SBE'" />
+        <div class="business-info">
+          <div class="business-name">Swiss-Belexpress Jayapura</div>
+          <div class="business-tagline">Experience Jayapura's Best</div>
+        </div>
+        <span class="business-arrow">›</span>
+      </a>
 
-        <a href="https://www.swiss-belhotel.com/en-gb/swiss-belexpress-jayapura/rooms" target="_blank" rel="noopener" class="link-card link-primary">
-          <span class="link-icon">🛎️</span>
-          <span class="link-text">
-            <span class="link-title">Book Direct & Save More!</span>
-            <span class="link-sub">Best rate guaranteed</span>
-          </span>
-          <span class="link-arrow">›</span>
-        </a>
-      </div>
+      <a href="swissbelexpress-abe/" class="business-card" data-name="swiss belexpress abe">
+        <img src="https://placehold.co/48x48/c9a84c/fff?text=SBE" class="business-avatar" alt="Swiss-Belexpress Abe" />
+        <div class="business-info">
+          <div class="business-name">Swiss-Belexpress Abe</div>
+          <div class="business-tagline">Modern Comfort in Abe</div>
+        </div>
+        <span class="business-arrow">›</span>
+      </a>
 
-      <!-- CONTACT -->
-      <p class="section-label">Contact Us</p>
-      <div class="link-group">
-        <a href="https://wa.me/6282272727722" target="_blank" rel="noopener" class="link-card link-whatsapp">
-          <span class="link-icon">
-            <svg viewBox="0 0 24 24" fill="currentColor" class="wa-icon"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
-          </span>
-          <span class="link-text">
-            <span class="link-title">Reservation via WhatsApp</span>
-            <span class="link-sub">+62 822-7272-7722</span>
-          </span>
-          <span class="link-arrow">›</span>
-        </a>
-      </div>
+      <a href="swissbelexpress-timika/" class="business-card" data-name="swiss belexpress timika">
+        <img src="https://placehold.co/48x48/c9a84c/fff?text=SBE" class="business-avatar" alt="Swiss-Belexpress Timika" />
+        <div class="business-info">
+          <div class="business-name">Swiss-Belexpress Timika</div>
+          <div class="business-tagline">Your Gateway to Timika</div>
+        </div>
+        <span class="business-arrow">›</span>
+      </a>
 
-      <!-- ABOUT -->
-      <p class="section-label">About Us</p>
-      <div class="link-group">
-        <a href="https://docs.google.com/presentation/d/1re2yFY4QTHTunRCJ_xy_lA2LXXh8kUV6/edit?slide=id.p1#slide=id.p1" target="_blank" rel="noopener" class="link-card">
-          <span class="link-icon">📋</span>
-          <span class="link-text">
-            <span class="link-title">Hotel Profile</span>
-            <span class="link-sub">Experience Jayapura's Best</span>
-          </span>
-          <span class="link-arrow">›</span>
-        </a>
+      <a href="swissbelexpress-merauke/" class="business-card" data-name="swiss belexpress merauke">
+        <img src="https://placehold.co/48x48/c9a84c/fff?text=SBE" class="business-avatar" alt="Swiss-Belexpress Merauke" />
+        <div class="business-info">
+          <div class="business-name">Swiss-Belexpress Merauke</div>
+          <div class="business-tagline">Southern Papua's Finest</div>
+        </div>
+        <span class="business-arrow">›</span>
+      </a>
 
-        <a href="https://drive.google.com/drive/folders/1xWF066NwkhtnwzdI75hWtJHpZWjL7GZV?usp=sharing" target="_blank" rel="noopener" class="link-card">
-          <span class="link-icon">📷</span>
-          <span class="link-text">
-            <span class="link-title">Photo Gallery</span>
-            <span class="link-sub">Lihat koleksi foto hotel kami</span>
-          </span>
-          <span class="link-arrow">›</span>
-        </a>
-      </div>
+      <a href="swissbelexpress-sentani/" class="business-card" data-name="swiss belexpress sentani">
+        <img src="https://placehold.co/48x48/c9a84c/fff?text=SBE" class="business-avatar" alt="Swiss-Belexpress Sentani" />
+        <div class="business-info">
+          <div class="business-name">Swiss-Belexpress Sentani</div>
+          <div class="business-tagline">Near the Airport, Beyond Expectations</div>
+        </div>
+        <span class="business-arrow">›</span>
+      </a>
 
-      <!-- SPECIAL OFFERS -->
-      <p class="section-label">Special Offers & Partners</p>
-      <div class="link-group">
-        <a href="https://www.swiss-belhotel.com/offers/stay-3-pay-2" target="_blank" rel="noopener" class="link-card link-offer">
-          <span class="link-icon">💳</span>
-          <span class="link-text">
-            <span class="link-title">Stay 3, Pay 2 – Mastercard</span>
-            <span class="link-sub">Exclusive Mastercard Offer</span>
-          </span>
-          <span class="link-arrow">›</span>
-        </a>
+      <a href="mercure-timika/" class="business-card" data-name="mercure timika">
+        <img src="https://placehold.co/48x48/e74c3c/fff?text=M" class="business-avatar" alt="Mercure Timika" />
+        <div class="business-info">
+          <div class="business-name">Mercure Timika</div>
+          <div class="business-tagline">French Elegance in Papua</div>
+        </div>
+        <span class="business-arrow">›</span>
+      </a>
 
-        <a href="https://www.swiss-belhotel.com/offers/garuda" target="_blank" rel="noopener" class="link-card link-offer">
-          <span class="link-icon">✈️</span>
-          <span class="link-text">
-            <span class="link-title">Earn GarudaMiles</span>
-            <span class="link-sub">Up to 3 miles per USD 1 spent</span>
-          </span>
-          <span class="link-arrow">›</span>
-        </a>
+      <a href="mercure-jayapura/" class="business-card" data-name="mercure jayapura">
+        <img src="https://placehold.co/48x48/e74c3c/fff?text=M" class="business-avatar" alt="Mercure Jayapura" />
+        <div class="business-info">
+          <div class="business-name">Mercure Jayapura</div>
+          <div class="business-tagline">The Heart of Jayapura</div>
+        </div>
+        <span class="business-arrow">›</span>
+      </a>
 
-        <a href="https://www.swiss-belhotel.com/offers/citilink" target="_blank" rel="noopener" class="link-card link-offer">
-          <span class="link-icon">🎯</span>
-          <span class="link-text">
-            <span class="link-title">Citilink × Swiss-Belhotel</span>
-            <span class="link-sub">Earn Up to 3 LinkMiles per USD</span>
-          </span>
-          <span class="link-arrow">›</span>
-        </a>
+      <a href="hotelmaxone-jayapura/" class="business-card" data-name="hotel maxone jayapura">
+        <img src="https://placehold.co/48x48/3498db/fff?text=MX" class="business-avatar" alt="Hotel MaxOne Jayapura" />
+        <div class="business-info">
+          <div class="business-name">Hotel MaxOne Jayapura</div>
+          <div class="business-tagline">Smart Stay, Great Value</div>
+        </div>
+        <span class="business-arrow">›</span>
+      </a>
 
-        <a href="https://www.swiss-belhotel.com/offers/maybank" target="_blank" rel="noopener" class="link-card link-offer">
-          <span class="link-icon">🏦</span>
-          <span class="link-text">
-            <span class="link-title">Maybank – 15% Off Rooms & Dining</span>
-            <span class="link-sub">Valid dengan kartu kredit Maybank</span>
-          </span>
-          <span class="link-arrow">›</span>
-        </a>
+    </div>
 
-        <a href="https://www.swiss-belhotel.com/offers/bni" target="_blank" rel="noopener" class="link-card link-offer">
-          <span class="link-icon">🏦</span>
-          <span class="link-text">
-            <span class="link-title">BNI – 15% Off Rooms & Dining</span>
-            <span class="link-sub">Valid hingga 22 Des 2026</span>
-          </span>
-          <span class="link-arrow">›</span>
-        </a>
+    <!-- Restaurants -->
+    <div class="category-title">Restoran <span class="business-category-tag">1 bisnis</span></div>
+    <div class="business-grid" data-category="restaurant">
 
-        <a href="https://www.swiss-belhotel.com/offers/bri" target="_blank" rel="noopener" class="link-card link-offer">
-          <span class="link-icon">🏦</span>
-          <span class="link-text">
-            <span class="link-title">BRI – 15% Off Rooms & Dining</span>
-            <span class="link-sub">Promo kartu kredit BRI</span>
-          </span>
-          <span class="link-arrow">›</span>
-        </a>
+      <a href="lelemuku-cafe/" class="business-card" data-name="lelemuku cafe">
+        <img src="https://placehold.co/48x48/27ae60/fff?text=LC" class="business-avatar" alt="Lelemuku Café" />
+        <div class="business-info">
+          <div class="business-name">Lelemuku Café</div>
+          <div class="business-tagline">Taste of Papua</div>
+        </div>
+        <span class="business-arrow">›</span>
+      </a>
 
-        <a href="https://www.swiss-belhotel.com/offers/danamon" target="_blank" rel="noopener" class="link-card link-offer">
-          <span class="link-icon">🏦</span>
-          <span class="link-text">
-            <span class="link-title">Danamon – 15% Off Rooms & Dining</span>
-            <span class="link-sub">Valid hingga 22 Des 2026</span>
-          </span>
-          <span class="link-arrow">›</span>
-        </a>
+    </div>
 
-        <a href="https://www.swiss-belhotel.com/offers/bca" target="_blank" rel="noopener" class="link-card link-offer">
-          <span class="link-icon">🏦</span>
-          <span class="link-text">
-            <span class="link-title">BCA – 15% Off Room & Dining</span>
-            <span class="link-sub">Valid hingga 22 Des 2026</span>
-          </span>
-          <span class="link-arrow">›</span>
-        </a>
-      </div>
+    <!-- Malls -->
+    <div class="category-title">Mall <span class="business-category-tag">1 bisnis</span></div>
+    <div class="business-grid" data-category="mall">
 
-    </section>
+      <a href="jayapura-mall/" class="business-card" data-name="jayapura mall">
+        <img src="https://placehold.co/48x48/9b59b6/fff?text=JM" class="business-avatar" alt="Jayapura Mall" />
+        <div class="business-info">
+          <div class="business-name">Jayapura Mall</div>
+          <div class="business-tagline">The Biggest Shopping Destination in Papua</div>
+        </div>
+        <span class="business-arrow">›</span>
+      </a>
 
-    <footer class="footer">
-      <p>© 2025 Swiss-Belexpress Jayapura · All rights reserved</p>
-      <p class="footer-domain">promo.lelemuku.com</p>
-    </footer>
+    </div>
 
-  </main>
+    <div class="no-results" id="noResults">
+      <p>🔍 Tidak ada bisnis yang cocok dengan pencarian Anda.</p>
+      <p style="margin-top:8px; font-size:0.75rem;">Coba kata kunci lain seperti "hotel", "restoran", "mall", atau nama bisnis.</p>
+    </div>
 
-  <script src="main.js"></script>
+  </div>
+
+  <footer class="landing-footer">
+    <p>© 2025 Lelemuku Group · <a href="mailto:hello@lelemuku.com">hello@lelemuku.com</a></p>
+    <p style="margin-top:6px;">Ingin bisnis Anda tampil di sini? <a href="mailto:hello@lelemuku.com">Hubungi kami</a></p>
+  </footer>
+
+  <script>
+    // ===== SEARCH FUNCTIONALITY =====
+    const searchInput = document.getElementById('searchInput');
+    const noResults = document.getElementById('noResults');
+    const allCards = document.querySelectorAll('.business-card');
+    const allGrids = document.querySelectorAll('.business-grid');
+    const allTitles = document.querySelectorAll('.category-title');
+
+    searchInput.addEventListener('input', function() {
+      const query = this.value.toLowerCase().trim();
+      let visibleCount = 0;
+
+      allCards.forEach(card => {
+        const name = card.getAttribute('data-name');
+        const tagline = card.querySelector('.business-tagline').textContent.toLowerCase();
+
+        if (name.includes(query) || tagline.includes(query)) {
+          card.classList.remove('hidden');
+          visibleCount++;
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+
+      // Hide empty category sections
+      allGrids.forEach((grid, index) => {
+        const visibleCards = grid.querySelectorAll('.business-card:not(.hidden)');
+        if (visibleCards.length === 0) {
+          grid.style.display = 'none';
+          if (allTitles[index]) allTitles[index].style.display = 'none';
+        } else {
+          grid.style.display = 'grid';
+          if (allTitles[index]) allTitles[index].style.display = 'flex';
+        }
+      });
+
+      // Show/hide no results message
+      if (visibleCount === 0 && query.length > 0) {
+        noResults.classList.add('show');
+      } else {
+        noResults.classList.remove('show');
+      }
+    });
+
+    // ===== SMOOTH SCROLL =====
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+
 </body>
 </html>

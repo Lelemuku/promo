@@ -1,0 +1,554 @@
+{
+  "swissbelexpress-jayapura": {
+    "name": "Swiss-Belexpress Jayapura",
+    "tagline": "Experience Jayapura's Best",
+    "category": "hotel",
+    "brand_color": "#c9a84c",
+    "brand_color_light": "#e8c97a",
+    "brand_color_dim": "#a07c30",
+    "avatar": "https://ugc.production.linktr.ee/7d4b9f42-979d-4c2a-96c3-94871f3569d6_WhatsApp-Image-2025-05-22-at-17.11.01.jpeg",
+    "socials": {
+      "instagram": "https://www.instagram.com/swissbelexpressjayapura",
+      "facebook": "https://www.facebook.com/swissbelexpressjayapura",
+      "email": "mailto:info.jayapura@swiss-belexpress.com"
+    },
+    "links": [
+      {
+        "type": "primary",
+        "icon": "🏅",
+        "title": "SBEC Member Zone",
+        "subtitle": "CRM of Hospitality Solution",
+        "url": "https://sbec.swiss-belhotel.com/register"
+      },
+      {
+        "type": "primary",
+        "icon": "🛎️",
+        "title": "Book Direct & Save More!",
+        "subtitle": "Best rate guaranteed",
+        "url": "https://www.swiss-belhotel.com/en-gb/swiss-belexpress-jayapura/rooms"
+      },
+      {
+        "type": "whatsapp",
+        "icon": "wa",
+        "title": "Reservation via WhatsApp",
+        "subtitle": "+62 822-7272-7722",
+        "url": "https://wa.me/6282272727722"
+      },
+      {
+        "type": "normal",
+        "icon": "📋",
+        "title": "Hotel Profile",
+        "subtitle": "Experience Jayapura's Best",
+        "url": "https://docs.google.com/presentation/d/1re2yFY4QTHTunRCJ_xy_lA2LXXh8kUV6/edit"
+      },
+      {
+        "type": "normal",
+        "icon": "📷",
+        "title": "Photo Gallery",
+        "subtitle": "Lihat koleksi foto hotel kami",
+        "url": "https://drive.google.com/drive/folders/1xWF066NwkhtnwzdI75hWtJHpZWjL7GZV"
+      },
+      {
+        "type": "offer",
+        "icon": "💳",
+        "title": "Stay 3, Pay 2 – Mastercard",
+        "subtitle": "Exclusive Mastercard Offer",
+        "url": "https://www.swiss-belhotel.com/offers/stay-3-pay-2"
+      },
+      {
+        "type": "offer",
+        "icon": "✈️",
+        "title": "Earn GarudaMiles",
+        "subtitle": "Up to 3 miles per USD 1 spent",
+        "url": "https://www.swiss-belhotel.com/offers/garuda"
+      },
+      {
+        "type": "offer",
+        "icon": "🎯",
+        "title": "Citilink × Swiss-Belhotel",
+        "subtitle": "Earn Up to 3 LinkMiles per USD",
+        "url": "https://www.swiss-belhotel.com/offers/citilink"
+      },
+      {
+        "type": "offer",
+        "icon": "🏦",
+        "title": "Maybank – 15% Off Rooms & Dining",
+        "subtitle": "Valid dengan kartu kredit Maybank",
+        "url": "https://www.swiss-belhotel.com/offers/maybank"
+      },
+      {
+        "type": "offer",
+        "icon": "🏦",
+        "title": "BNI – 15% Off Rooms & Dining",
+        "subtitle": "Valid hingga 22 Des 2026",
+        "url": "https://www.swiss-belhotel.com/offers/bni"
+      },
+      {
+        "type": "offer",
+        "icon": "🏦",
+        "title": "BRI – 15% Off Rooms & Dining",
+        "subtitle": "Promo kartu kredit BRI",
+        "url": "https://www.swiss-belhotel.com/offers/bri"
+      },
+      {
+        "type": "offer",
+        "icon": "🏦",
+        "title": "Danamon – 15% Off Rooms & Dining",
+        "subtitle": "Valid hingga 22 Des 2026",
+        "url": "https://www.swiss-belhotel.com/offers/danamon"
+      },
+      {
+        "type": "offer",
+        "icon": "🏦",
+        "title": "BCA – 15% Off Room & Dining",
+        "subtitle": "Valid hingga 22 Des 2026",
+        "url": "https://www.swiss-belhotel.com/offers/bca"
+      }
+    ]
+  },
+  "swissbelexpress-abe": {
+    "name": "Swiss-Belexpress Abe",
+    "tagline": "Modern Comfort in Abe",
+    "category": "hotel",
+    "brand_color": "#c9a84c",
+    "brand_color_light": "#e8c97a",
+    "brand_color_dim": "#a07c30",
+    "avatar": "https://placehold.co/120x120/c9a84c/fff?text=SBE+Abe",
+    "socials": {
+      "instagram": "https://www.instagram.com/swissbelexpressabe",
+      "facebook": "https://www.facebook.com/swissbelexpressabe",
+      "email": "mailto:info.abe@swiss-belexpress.com"
+    },
+    "links": [
+      {
+        "type": "primary",
+        "icon": "🏅",
+        "title": "SBEC Member Zone",
+        "subtitle": "CRM of Hospitality Solution",
+        "url": "https://sbec.swiss-belhotel.com/register"
+      },
+      {
+        "type": "primary",
+        "icon": "🛎️",
+        "title": "Book Direct & Save More!",
+        "subtitle": "Best rate guaranteed",
+        "url": "https://www.swiss-belhotel.com/en-gb/swiss-belexpress-abe/rooms"
+      },
+      {
+        "type": "whatsapp",
+        "icon": "wa",
+        "title": "Reservation via WhatsApp",
+        "subtitle": "+62 822-7272-7723",
+        "url": "https://wa.me/6282272727723"
+      },
+      {
+        "type": "normal",
+        "icon": "📋",
+        "title": "Hotel Profile",
+        "subtitle": "Modern Comfort in Abe",
+        "url": "#"
+      },
+      {
+        "type": "normal",
+        "icon": "📷",
+        "title": "Photo Gallery",
+        "subtitle": "Lihat koleksi foto hotel kami",
+        "url": "#"
+      }
+    ]
+  },
+  "swissbelexpress-timika": {
+    "name": "Swiss-Belexpress Timika",
+    "tagline": "Your Gateway to Timika",
+    "category": "hotel",
+    "brand_color": "#c9a84c",
+    "brand_color_light": "#e8c97a",
+    "brand_color_dim": "#a07c30",
+    "avatar": "https://placehold.co/120x120/c9a84c/fff?text=SBE+Timika",
+    "socials": {
+      "instagram": "https://www.instagram.com/swissbelexpresstimika",
+      "facebook": "https://www.facebook.com/swissbelexpresstimika",
+      "email": "mailto:info.timika@swiss-belexpress.com"
+    },
+    "links": [
+      {
+        "type": "primary",
+        "icon": "🏅",
+        "title": "SBEC Member Zone",
+        "subtitle": "CRM of Hospitality Solution",
+        "url": "https://sbec.swiss-belhotel.com/register"
+      },
+      {
+        "type": "primary",
+        "icon": "🛎️",
+        "title": "Book Direct & Save More!",
+        "subtitle": "Best rate guaranteed",
+        "url": "https://www.swiss-belhotel.com/en-gb/swiss-belexpress-timika/rooms"
+      },
+      {
+        "type": "whatsapp",
+        "icon": "wa",
+        "title": "Reservation via WhatsApp",
+        "subtitle": "+62 822-7272-7724",
+        "url": "https://wa.me/6282272727724"
+      },
+      {
+        "type": "normal",
+        "icon": "📋",
+        "title": "Hotel Profile",
+        "subtitle": "Your Gateway to Timika",
+        "url": "#"
+      },
+      {
+        "type": "normal",
+        "icon": "📷",
+        "title": "Photo Gallery",
+        "subtitle": "Lihat koleksi foto hotel kami",
+        "url": "#"
+      }
+    ]
+  },
+  "swissbelexpress-merauke": {
+    "name": "Swiss-Belexpress Merauke",
+    "tagline": "Southern Papua's Finest",
+    "category": "hotel",
+    "brand_color": "#c9a84c",
+    "brand_color_light": "#e8c97a",
+    "brand_color_dim": "#a07c30",
+    "avatar": "https://placehold.co/120x120/c9a84c/fff?text=SBE+Merauke",
+    "socials": {
+      "instagram": "https://www.instagram.com/swissbelexpressmerauke",
+      "facebook": "https://www.facebook.com/swissbelexpressmerauke",
+      "email": "mailto:info.merauke@swiss-belexpress.com"
+    },
+    "links": [
+      {
+        "type": "primary",
+        "icon": "🏅",
+        "title": "SBEC Member Zone",
+        "subtitle": "CRM of Hospitality Solution",
+        "url": "https://sbec.swiss-belhotel.com/register"
+      },
+      {
+        "type": "primary",
+        "icon": "🛎️",
+        "title": "Book Direct & Save More!",
+        "subtitle": "Best rate guaranteed",
+        "url": "https://www.swiss-belhotel.com/en-gb/swiss-belexpress-merauke/rooms"
+      },
+      {
+        "type": "whatsapp",
+        "icon": "wa",
+        "title": "Reservation via WhatsApp",
+        "subtitle": "+62 822-7272-7725",
+        "url": "https://wa.me/6282272727725"
+      },
+      {
+        "type": "normal",
+        "icon": "📋",
+        "title": "Hotel Profile",
+        "subtitle": "Southern Papua's Finest",
+        "url": "#"
+      },
+      {
+        "type": "normal",
+        "icon": "📷",
+        "title": "Photo Gallery",
+        "subtitle": "Lihat koleksi foto hotel kami",
+        "url": "#"
+      }
+    ]
+  },
+  "swissbelexpress-sentani": {
+    "name": "Swiss-Belexpress Sentani",
+    "tagline": "Near the Airport, Beyond Expectations",
+    "category": "hotel",
+    "brand_color": "#c9a84c",
+    "brand_color_light": "#e8c97a",
+    "brand_color_dim": "#a07c30",
+    "avatar": "https://placehold.co/120x120/c9a84c/fff?text=SBE+Sentani",
+    "socials": {
+      "instagram": "https://www.instagram.com/swissbelexpresssentani",
+      "facebook": "https://www.facebook.com/swissbelexpresssentani",
+      "email": "mailto:info.sentani@swiss-belexpress.com"
+    },
+    "links": [
+      {
+        "type": "primary",
+        "icon": "🏅",
+        "title": "SBEC Member Zone",
+        "subtitle": "CRM of Hospitality Solution",
+        "url": "https://sbec.swiss-belhotel.com/register"
+      },
+      {
+        "type": "primary",
+        "icon": "🛎️",
+        "title": "Book Direct & Save More!",
+        "subtitle": "Best rate guaranteed",
+        "url": "https://www.swiss-belhotel.com/en-gb/swiss-belexpress-sentani/rooms"
+      },
+      {
+        "type": "whatsapp",
+        "icon": "wa",
+        "title": "Reservation via WhatsApp",
+        "subtitle": "+62 822-7272-7726",
+        "url": "https://wa.me/6282272727726"
+      },
+      {
+        "type": "normal",
+        "icon": "📋",
+        "title": "Hotel Profile",
+        "subtitle": "Near the Airport, Beyond Expectations",
+        "url": "#"
+      },
+      {
+        "type": "normal",
+        "icon": "📷",
+        "title": "Photo Gallery",
+        "subtitle": "Lihat koleksi foto hotel kami",
+        "url": "#"
+      }
+    ]
+  },
+  "mercure-timika": {
+    "name": "Mercure Timika",
+    "tagline": "French Elegance in Papua",
+    "category": "hotel",
+    "brand_color": "#e74c3c",
+    "brand_color_light": "#ff6b6b",
+    "brand_color_dim": "#c0392b",
+    "avatar": "https://placehold.co/120x120/e74c3c/fff?text=Mercure",
+    "socials": {
+      "instagram": "https://www.instagram.com/mercuretimika",
+      "facebook": "https://www.facebook.com/mercuretimika",
+      "email": "mailto:info@mercuretimika.com"
+    },
+    "links": [
+      {
+        "type": "primary",
+        "icon": "🛎️",
+        "title": "Book Your Stay",
+        "subtitle": "Best rate guaranteed",
+        "url": "https://all.accor.com/hotel/xxxx/index.id.shtml"
+      },
+      {
+        "type": "whatsapp",
+        "icon": "wa",
+        "title": "Reservation via WhatsApp",
+        "subtitle": "+62 822-7272-7730",
+        "url": "https://wa.me/6282272727730"
+      },
+      {
+        "type": "normal",
+        "icon": "📋",
+        "title": "Hotel Profile",
+        "subtitle": "French Elegance in Papua",
+        "url": "#"
+      },
+      {
+        "type": "normal",
+        "icon": "📷",
+        "title": "Photo Gallery",
+        "subtitle": "Lihat koleksi foto hotel kami",
+        "url": "#"
+      }
+    ]
+  },
+  "mercure-jayapura": {
+    "name": "Mercure Jayapura",
+    "tagline": "The Heart of Jayapura",
+    "category": "hotel",
+    "brand_color": "#e74c3c",
+    "brand_color_light": "#ff6b6b",
+    "brand_color_dim": "#c0392b",
+    "avatar": "https://placehold.co/120x120/e74c3c/fff?text=Mercure+JYP",
+    "socials": {
+      "instagram": "https://www.instagram.com/mercurejayapura",
+      "facebook": "https://www.facebook.com/mercurejayapura",
+      "email": "mailto:info@mercurejayapura.com"
+    },
+    "links": [
+      {
+        "type": "primary",
+        "icon": "🛎️",
+        "title": "Book Your Stay",
+        "subtitle": "Best rate guaranteed",
+        "url": "https://all.accor.com/hotel/xxxx/index.id.shtml"
+      },
+      {
+        "type": "whatsapp",
+        "icon": "wa",
+        "title": "Reservation via WhatsApp",
+        "subtitle": "+62 822-7272-7731",
+        "url": "https://wa.me/6282272727731"
+      },
+      {
+        "type": "normal",
+        "icon": "📋",
+        "title": "Hotel Profile",
+        "subtitle": "The Heart of Jayapura",
+        "url": "#"
+      },
+      {
+        "type": "normal",
+        "icon": "📷",
+        "title": "Photo Gallery",
+        "subtitle": "Lihat koleksi foto hotel kami",
+        "url": "#"
+      }
+    ]
+  },
+  "hotelmaxone-jayapura": {
+    "name": "Hotel MaxOne Jayapura",
+    "tagline": "Smart Stay, Great Value",
+    "category": "hotel",
+    "brand_color": "#3498db",
+    "brand_color_light": "#5dade2",
+    "brand_color_dim": "#2980b9",
+    "avatar": "https://placehold.co/120x120/3498db/fff?text=MaxOne",
+    "socials": {
+      "instagram": "https://www.instagram.com/hotelmaxonejayapura",
+      "facebook": "https://www.facebook.com/hotelmaxonejayapura",
+      "email": "mailto:info@maxonejayapura.com"
+    },
+    "links": [
+      {
+        "type": "primary",
+        "icon": "🛎️",
+        "title": "Book Your Stay",
+        "subtitle": "Best rate guaranteed",
+        "url": "https://www.maxonehotels.com/jayapura"
+      },
+      {
+        "type": "whatsapp",
+        "icon": "wa",
+        "title": "Reservation via WhatsApp",
+        "subtitle": "+62 822-7272-7740",
+        "url": "https://wa.me/6282272727740"
+      },
+      {
+        "type": "normal",
+        "icon": "📋",
+        "title": "Hotel Profile",
+        "subtitle": "Smart Stay, Great Value",
+        "url": "#"
+      },
+      {
+        "type": "normal",
+        "icon": "📷",
+        "title": "Photo Gallery",
+        "subtitle": "Lihat koleksi foto hotel kami",
+        "url": "#"
+      }
+    ]
+  },
+  "lelemuku-cafe": {
+    "name": "Lelemuku Café",
+    "tagline": "Taste of Papua",
+    "category": "restaurant",
+    "brand_color": "#27ae60",
+    "brand_color_light": "#58d68d",
+    "brand_color_dim": "#1e8449",
+    "avatar": "https://placehold.co/120x120/27ae60/fff?text=Lelemuku",
+    "socials": {
+      "instagram": "https://www.instagram.com/lelemukucafe",
+      "facebook": "https://www.facebook.com/lelemukucafe",
+      "email": "mailto:hello@lelemuku.com"
+    },
+    "links": [
+      {
+        "type": "primary",
+        "icon": "🍽️",
+        "title": "Lihat Menu",
+        "subtitle": "Menu lengkap & harga",
+        "url": "#"
+      },
+      {
+        "type": "whatsapp",
+        "icon": "wa",
+        "title": "Pesan via WhatsApp",
+        "subtitle": "+62 822-7272-7750",
+        "url": "https://wa.me/6282272727750"
+      },
+      {
+        "type": "normal",
+        "icon": "📍",
+        "title": "Lokasi & Jam Buka",
+        "subtitle": "Jl. Yos Sudarso No. 123, Jayapura",
+        "url": "https://maps.google.com"
+      },
+      {
+        "type": "normal",
+        "icon": "📷",
+        "title": "Galeri Foto",
+        "subtitle": "Lihat suasana & hidangan kami",
+        "url": "#"
+      },
+      {
+        "type": "offer",
+        "icon": "🎉",
+        "title": "Promo Lunch Special",
+        "subtitle": "Diskon 20% setiap hari Senin-Jumat 11:00-14:00",
+        "url": "#"
+      }
+    ]
+  },
+  "jayapura-mall": {
+    "name": "Jayapura Mall",
+    "tagline": "The Biggest Shopping Destination in Papua",
+    "category": "mall",
+    "brand_color": "#9b59b6",
+    "brand_color_light": "#bb8fce",
+    "brand_color_dim": "#7d3c98",
+    "avatar": "https://placehold.co/120x120/9b59b6/fff?text=JYP+Mall",
+    "socials": {
+      "instagram": "https://www.instagram.com/jayapuramall",
+      "facebook": "https://www.facebook.com/jayapuramall",
+      "email": "mailto:info@jayapuramall.com"
+    },
+    "links": [
+      {
+        "type": "primary",
+        "icon": "🏬",
+        "title": "Daftar Tenant",
+        "subtitle": "Lihat semua tenant & brand",
+        "url": "#"
+      },
+      {
+        "type": "primary",
+        "icon": "📅",
+        "title": "Event & Promo",
+        "subtitle": "Event dan promo bulan ini",
+        "url": "#"
+      },
+      {
+        "type": "whatsapp",
+        "icon": "wa",
+        "title": "Info Tenant & Sewa",
+        "subtitle": "+62 822-7272-7760",
+        "url": "https://wa.me/6282272727760"
+      },
+      {
+        "type": "normal",
+        "icon": "📍",
+        "title": "Lokasi & Jam Operasional",
+        "subtitle": "Jl. Sam Ratulangi, Jayapura",
+        "url": "https://maps.google.com"
+      },
+      {
+        "type": "normal",
+        "icon": "🚗",
+        "title": "Info Parkir",
+        "subtitle": "Kapasitas & tarif parkir",
+        "url": "#"
+      },
+      {
+        "type": "normal",
+        "icon": "📷",
+        "title": "Galeri Foto",
+        "subtitle": "Lihat suasana mall kami",
+        "url": "#"
+      }
+    ]
+  }
+}
