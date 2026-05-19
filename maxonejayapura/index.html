@@ -163,6 +163,170 @@
       outline: 2px solid var(--brand-color-dim);
       outline-offset: 2px;
     }
+
+    /* Instagram Feed Section */
+    .instagram-section {
+      margin-top: 2rem;
+      padding: 2rem 0;
+    }
+
+    .instagram-header {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .instagram-header h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .instagram-header p {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+    }
+
+    .instagram-feed {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .instagram-item {
+      position: relative;
+      aspect-ratio: 1;
+      overflow: hidden;
+      border-radius: 8px;
+      border: 2px solid var(--brand-color);
+      background: var(--secondary-color);
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .instagram-item:hover {
+      border-color: var(--complement-color);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(144, 238, 144, 0.3);
+    }
+
+    .instagram-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .instagram-item:hover img {
+      transform: scale(1.05);
+    }
+
+    .instagram-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .instagram-item:hover .instagram-overlay {
+      opacity: 1;
+    }
+
+    .instagram-overlay svg {
+      width: 32px;
+      height: 32px;
+      fill: var(--brand-color);
+    }
+
+    .instagram-load-more {
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    .instagram-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      background: var(--brand-color);
+      color: var(--complement-color);
+      border: 2px solid var(--complement-color);
+      border-radius: 25px;
+      font-family: 'Jost', sans-serif;
+      font-weight: 500;
+      font-size: 0.9rem;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .instagram-btn:hover {
+      background: var(--complement-color);
+      color: var(--brand-color);
+      border-color: var(--brand-color);
+    }
+
+    .instagram-error {
+      text-align: center;
+      padding: 2rem;
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+
+    .instagram-error a {
+      color: var(--brand-color-dim);
+      text-decoration: underline;
+    }
+
+    /* Loading skeleton */
+    .instagram-loading {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.75rem;
+    }
+
+    .instagram-loading .skeleton {
+      aspect-ratio: 1;
+      background: linear-gradient(90deg, var(--brand-color-light) 25%, var(--brand-color) 50%, var(--brand-color-light) 75%);
+      background-size: 200% 100%;
+      animation: loading 1.5s infinite;
+      border-radius: 8px;
+      border: 2px solid var(--brand-color);
+    }
+
+    @keyframes loading {
+      0% { background-position: 200% 0; }
+      100% { background-position: -200% 0; }
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .instagram-feed {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+      }
+
+      .instagram-header h2 {
+        font-size: 1.5rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .instagram-feed {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+      }
+
+      .instagram-section {
+        padding: 1.5rem 0;
+      }
+    }
   </style>
 </head>
 <body>
@@ -183,7 +347,8 @@
       </div>
       <span class="category-badge">hotel</span>
       <h1 class="hotel-name">Hotel MaxOne Jayapura</h1>
-      <p class="tagline">The Best Hotel in Jayapura ✨</p><p>Informasi : 📞 089675166111-SM ☎️ 08114757888- RSV</p>
+      <p class="tagline">The Best Hotel in Jayapura ✨</p>
+      <p>Informasi : 📞 089675166111-SM ☎️ 08114757888- RSV</p>
 
       <div class="socials">
         <a href="https://www.instagram.com/maxonehoteljayapura/" target="_blank" rel="noopener" aria-label="Instagram" class="social-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></a>
@@ -237,6 +402,37 @@
       </div>
     </section>
 
+    <!-- Instagram Feed Section -->
+    <section class="instagram-section">
+      <div class="instagram-header">
+        <h2>Follow Us on Instagram</h2>
+        <p>@maxonehoteljayapura - Lihat momen terbaik kami</p>
+      </div>
+      
+      <div id="instagram-feed" class="instagram-feed">
+        <!-- Loading skeleton -->
+        <div class="instagram-loading">
+          <div class="skeleton"></div>
+          <div class="skeleton"></div>
+          <div class="skeleton"></div>
+          <div class="skeleton"></div>
+          <div class="skeleton"></div>
+          <div class="skeleton"></div>
+        </div>
+      </div>
+
+      <div class="instagram-load-more">
+        <a href="https://www.instagram.com/maxonehoteljayapura/" target="_blank" rel="noopener" class="instagram-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:20px;height:20px;">
+            <rect x="2" y="2" width="20" height="20" rx="5"/>
+            <circle cx="12" cy="12" r="5"/>
+            <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/>
+          </svg>
+          Lihat Lebih Banyak di Instagram
+        </a>
+      </div>
+    </section>
+
     <footer class="footer">
       <p>© 2025 Hotel MaxOne Jayapura · All rights reserved</p>
       <p class="footer-domain">promo.lelemuku.com/hotelmaxone-jayapura</p>
@@ -245,5 +441,99 @@
   </main>
 
   <script src="../main.js"></script>
+  
+  <!-- Instagram Feed Script -->
+  <script>
+    // Instagram Feed Configuration
+    const INSTAGRAM_CONFIG = {
+      username: 'maxonehoteljayapura',
+      accessToken: '', // Dapatkan dari https://developers.facebook.com/tools/explorer/
+      postsCount: 6,
+      fallbackImages: [
+        // Fallback images jika API gagal
+        'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=400&fit=crop',
+        'https://images.unsplash.com/photo-1582719508461-905c673771fd?w=400&h=400&fit=crop',
+        'https://images.unsplash.com/photo-1590490360182-c33d57733427?w=400&h=400&fit=crop',
+        'https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=400&h=400&fit=crop',
+        'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=400&h=400&fit=crop',
+        'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=400&h=400&fit=crop'
+      ]
+    };
+
+    // Load Instagram Feed
+    async function loadInstagramFeed() {
+      const feedContainer = document.getElementById('instagram-feed');
+      
+      try {
+        // Jika ada access token, gunakan Instagram API
+        if (INSTAGRAM_CONFIG.accessToken) {
+          const response = await fetch(
+            `https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,permalink,thumbnail_url&access_token=${INSTAGRAM_CONFIG.accessToken}&limit=${INSTAGRAM_CONFIG.postsCount}`
+          );
+          const data = await response.json();
+          
+          if (data.data) {
+            renderInstagramPosts(data.data, feedContainer);
+            return;
+          }
+        }
+        
+        // Fallback: Gunakan widget Instagram dari SnapWidget atau Elfsight
+        loadInstagramWidget(feedContainer);
+        
+      } catch (error) {
+        console.error('Error loading Instagram feed:', error);
+        // Tampilkan fallback images
+        renderFallbackImages(feedContainer);
+      }
+    }
+
+    // Render Instagram posts
+    function renderInstagramPosts(posts, container) {
+      container.innerHTML = posts.map(post => `
+        <a href="${post.permalink}" target="_blank" rel="noopener" class="instagram-item">
+          <img src="${post.media_url}" alt="${post.caption || 'Instagram post'}" loading="lazy" />
+          <div class="instagram-overlay">
+            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </div>
+        </a>
+      `).join('');
+    }
+
+    // Render fallback images
+    function renderFallbackImages(container) {
+      container.innerHTML = INSTAGRAM_CONFIG.fallbackImages.map((img, index) => `
+        <a href="https://www.instagram.com/maxonehoteljayapura/" target="_blank" rel="noopener" class="instagram-item">
+          <img src="${img}" alt="Hotel MaxOne Jayapura ${index + 1}" loading="lazy" />
+          <div class="instagram-overlay">
+            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </div>
+        </a>
+      `).join('');
+    }
+
+    // Load Instagram Widget (SnapWidget/Elfsight)
+    function loadInstagramWidget(container) {
+      // Opsi 1: Gunakan SnapWidget (gratis untuk 9 foto)
+      // Daftar di https://snapwidget.com/ untuk mendapat widget code
+      container.innerHTML = `
+        <iframe 
+          src="https://snapwidget.com/embed/your-widget-id" 
+          class="snapwidget-widget" 
+          allowtransparency="true" 
+          frameborder="0" 
+          scrolling="no" 
+          style="border:none; overflow:hidden; width:100%; height:100%;"
+          onerror="this.style.display='none'; renderFallbackImages(document.getElementById('instagram-feed'))">
+        </iframe>
+      `;
+      
+      // Atau gunakan Elfsight (lebih mudah)
+      // Daftar di https://elfsight.com/instagram-feed-instagrom/
+    }
+
+    // Initialize
+    document.addEventListener('DOMContentLoaded', loadInstagramFeed);
+  </script>
 </body>
 </html>
